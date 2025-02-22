@@ -1,0 +1,12 @@
+warning: unused import: `tokio::io::AsyncWriteExt`
+ --> src/bin/server.rs:2:5
+  |
+2 | use tokio::io::AsyncWriteExt;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: `rust-udp-sensor` (bin "server") generated 1 warning (run `cargo fix --bin "server"` to apply 1 suggestion)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/server`
+Error: Os { code: 98, kind: AddrInUse, message: "Address already in use" }
